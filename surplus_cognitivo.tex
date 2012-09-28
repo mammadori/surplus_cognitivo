@@ -1,0 +1,319 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Copyright 2012 - Marco Amadori <marco.amadori@gmail.com>
+%
+% Liceza: Creative Commons 3.0 CC-BY-SA
+% 
+% http://creativecommons.org/licenses/by-sa/3.0/it/deed.it
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[italian,compress,red]{beamer}
+\mode<presentation>{
+  \usetheme{Warsaw}
+  %\usecolortheme{wolverine}
+  \useoutertheme[subsection=false]{smoothbars}
+  \setbeamercovered{transparent}
+  %\beamerdefaultoverlayspecification{<+->}
+}
+
+\usepackage[italian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{times}
+
+\usepackage{subfigure}
+\usepackage{multicol}
+\usepackage{amsmath}
+\usepackage{epsfig}
+\usepackage{graphicx}
+\usepackage[all,knot]{xy}
+\xyoption{arc}
+\usepackage{url}
+\usepackage{multimedia}
+\usepackage{hyperref}
+\usepackage{setspace}
+\usepackage{textcomp}
+
+\input{cc_beamer}
+
+\title[Software e Surplus Cognitivo]{Surplus Cognitivo, Free Software, Open Data}
+\subtitle{Salire sulle spalle di tanti nani per guardare lontano}
+\author[Marco Amadori]{Marco Amadori <marco.amadori@gmail.com>}
+\institute{SpazioDati s.r.l --- \url{http://spaziodati.eu} \\
+           Fondazione Bruno Kessler --- \url{http://www.fbk.eu}}
+\date{\scriptsize Pordenone --- \vspace{.10cm}29 Settembre 2012}
+
+\pgfdeclareimage[height=0.8cm]{logo-small}{figures/TEDx.pdf}
+\pgfdeclareimage[height=1.6cm]{logo}{figures/TEDx_Pordenone.pdf}
+
+\pgfdeclareimage[height=1.6cm]{moglen}{figures/eben_moglen.jpg}
+\pgfdeclareimage[height=1.6cm]{clay}{figures/clay-shirky.png}
+\pgfdeclareimage[height=1.6cm]{newton}{figures/newton.jpg}
+
+\pgfdeclareimage[height=1cm]{apple}{figures/Apple_logo.png}
+\pgfdeclareimage[height=1cm]{ibm}{figures/IBM-logo.jpg}
+\pgfdeclareimage[height=1cm]{facebook}{figures/facebook-logo.jpg}
+
+\pgfdeclareimage[height=0.75\textheight]{cake}{figures/data-cake-graphic.jpg}
+\pgfdeclareimage[height=6cm]{openbilanci}{figures/openbilanci.png}
+
+\pgfdeclareimage[height=0.4cm]{flitaly}{figures/flag_of_italy.png}
+\pgfdeclareimage[height=0.4cm]{bitcoin}{figures/Bitcoin.png}
+
+\logo{\pgfuseimage{logo-small}}
+
+\begin{document}
+
+\begin{frame}[plain]
+  \titlepage
+  \begin{center}%
+    \pgfuseimage{logo}%
+    %license 
+    \end{center}%
+    %license 
+    \vfill
+   {\tiny\CcNote{\CcLongnameBySa}} \CcGroupBySa{0.83}{0.95ex}
+ 
+\end{frame}
+
+%\section[Sommario]{}
+%\frame{\tableofcontents}
+
+%ideas worth spreading
+% l'unione fa la forza
+% surplus cognitivo
+% Software
+% valore
+% apple, ibm, facebook il software permette di vendere hardware, combustibile (apple ibm o struttura,facebook
+% opendata e pubblica amministrazione
+% data cake
+% bitcoin
+% finale con newton e 
+
+%\section{L'unione fa la forza}
+
+%Qualche anno fa, come tesi di laurea, il docente mi chiese di realizzare un progetto software abbastanza innovativo per 
+%i tempi, 
+
+%qualche anno fa mi stavo interessando per curiosità personale a come funzionano i computer quando li accendi
+%certo quando la maggior parte delle persone li compra sono già pronti per partire, ma da buon smanettone
+%io compravo i pezzi uno ad uno e li mettevo assieme io, poi inserivo un CD e tramite quello si 'installava' il computer
+%cercando nella rete trovai dei CD che facevano funzionare un computer senza installarlo e senza toccare i dati che 
+%c'erano già sul disco
+
+
+\section{Surplus Cognitivo}
+
+\begin{frame}{Surplus Cognitivo}{Tempo libero e talenti del mondo}
+ \begin{itemize}
+  \item tempo libero
+  \item tecnologia digitale
+  \item motivazione
+  
+  \begin{columns}[T]
+  \begin{column}{.3\textwidth}
+    \begin{block}{Clay Shirky}
+      \begin{center}
+      \pgfuseimage{clay}
+      \end{center}
+     \end{block}
+
+  \end{column} 
+  \begin{column}{.7\textwidth}
+    \begin{exampleblock}{Il Surplus Cognitivo}
+    \begin{itemize}
+     \item «Rappresenta l'abilità della popolazione mondiale di contribuire volontariamente 
+e collaborare a grandi progetti a volte anche globali.»
+     \item  «nel mondo ci sono un milione di milardi di ore l'anno di tempo libero»
+    \end{itemize}
+
+   
+      \vfill
+      \begin{tiny} TED @Cannes 2010 \end{tiny}
+      
+    \end{exampleblock}   
+  \end{column}
+  \end{columns} 
+
+ \end{itemize}
+
+\end{frame}
+
+\begin{frame}{Esempi}{Sforzi creativi diffusi}
+\begin{columns}[T]
+  \begin{column}{.5\textwidth}
+   
+   \begin{exampleblock}{Software Libero o Open Source}
+  \begin{itemize}
+    \item Linux (Android)
+    \item Apache
+    \item OpenOffice \begin{tiny}(LibreOffice)\end{tiny}
+  \end{itemize}
+  \end{exampleblock}
+  \end{column}
+  \pause
+  \begin{column}{.5\textwidth}
+   \begin{exampleblock}{Open Data}
+  \begin{itemize}
+    \item Wikipedia
+    \item OpenStreetMap
+    \item \pgfuseimage{flitaly} \hspace{0.5ex} OpenBilanci
+  \end{itemize}
+  \end{exampleblock}
+  \end{column}
+
+  \end{columns}
+
+\end{frame} 
+  
+\section{Software}
+
+\begin{frame}{Il Software}{l'acciaio del {21\textdegree} secolo}
+  \begin{columns}[T]
+  \begin{column}{.3\textwidth}
+    \begin{block}{Eben Moglen}
+      \begin{center}
+      \pgfuseimage{moglen}
+      \end{center}
+      \vfill
+      \begin{tiny}Legale della \\ Free Software Foundation\end{tiny}\\
+    \end{block}
+
+  \end{column} 
+  \begin{column}{.7\textwidth}
+    \begin{exampleblock}{Il Software}
+      \begin{scriptsize}
+      
+	«\emph{Il Software} è quello di cui è fatto il 21esimo secolo. \\
+	quello che l'\emph{acciaio} era per l'economia del 20esimo secolo, \\
+	quello che l'\emph{acciaio} era per il potere nel 20esimo secolo, \\
+	quello che l'\emph{acciaio} era per la politica nel 20esimo secolo, \\
+	\emph{il Software} lo è oggi. \\
+	è la pietra angolare, il componente \\ 
+	sul quale tutto il resto è costruito\ldots» \\
+      \end{scriptsize}
+      \vfill
+      \begin{tiny} Brussel --- FOSDEM 2011 \end{tiny}
+      
+    \end{exampleblock}   
+  \end{column}
+  \end{columns}
+
+\end{frame}
+
+\begin{frame}{ICT companies}{non funzionerebbero senza}
+\begin{itemize}
+  \onslide+<1-> \item \pgfuseimage{ibm}
+  \onslide+<2-> \item \pgfuseimage{apple}
+  \onslide+<3-> \item \pgfuseimage{facebook}
+ \end{itemize}
+
+\end{frame}
+
+  
+\section{Data}
+
+\begin{frame}[<+->]{Free Software}{Le cose belle \underline{dell'informatica} sono gratis}
+\begin{enumerate}
+\setcounter{enumi}{-1}
+ \item Libertà di eseguire il programma per qualsiasi scopo.
+ \item Libertà di studiare il programma e modificarlo.
+ \item Libertà di ridistribuire copie del programma in modo da aiutare il prossimo.
+ \item Libertà di migliorare il programma e di distribuirne pubblicamente i miglioramenti, in modo tale che tutta la comunità ne tragga beneficio
+\end{enumerate}
+
+\end{frame}
+
+\begin{frame}{Open Data}{Il cibo del Software}
+
+\begin{center}
+ \pgfuseimage{cake}
+\end{center}
+\end{frame}
+
+\begin{frame}[<+->]{Open Bilanci}{Follow the money}
+\begin{itemize}
+ \item Quanto spende il mio comune per la manutenzione delle strade, la polizia municipale, gli asili, l'assistenza agli anziani?
+ \item Raffrontato con gli altri comuni è tanto o poco?
+ \item Qual è l'andamento nel tempo della spesa per questi servizi?
+ \item Chi è stato sindaco in questi anni?
+ \item Come è variato il bilancio comunale col passare delle varie amministrazioni? 
+ \item Chi ha accumulato più debiti?
+\end{itemize}
+ 
+\end{frame}
+
+\begin{frame}{OpenBilanci}{\url{http://opendata.comune.fi.it/open_bilancio}}
+\begin{center}
+ \pgfuseimage{openbilanci}
+\end{center}
+\end{frame}
+
+
+\section{Economia}
+
+\begin{frame}[<+->]{\pgfuseimage{bitcoin} \hspace{0.3ex} Bitcoin}{applicazione di Free Software e Open Data}
+ \begin{itemize}
+  \item moneta virtuale 
+  \item non associata ad una moneta statale
+  \item distribuita, decentralizzata
+  \item ha un costo di conio
+  \item un valore
+  \item senza inflazione forzata
+  \item software Open Source
+  \item i coin sono Open Data
+ \end{itemize}
+
+\end{frame}
+
+\section{Note finali}
+
+\begin{frame}{Conclusioni}{servono i giganti?}
+  \begin{columns}[T]
+  \begin{column}{.3\textwidth}
+    \begin{block}{Isaac Newton}
+      \begin{center}
+      \pgfuseimage{newton}
+      \end{center}
+      \end{block}
+
+  \end{column} 
+  \begin{column}{.7\textwidth}
+    \begin{exampleblock}{Il Software}
+      «Se ho visto più lontano, è perché stavo sulle spalle di giganti»
+      \vfill
+      \begin{tiny} in una lettera a Hooke, 5 febbraio 1676\end{tiny}
+      
+    \end{exampleblock}   
+  \end{column}
+  \end{columns}
+  
+  \begin{itemize}
+   \onslide+<2->
+   \item Legge di Linus: «Dato un numero sufficiente di occhi, tutti i bug vengono a galla» 
+   \onslide+<3->
+   \item tanti nani volenterosi possono guardare negli occhi un gigante
+  \end{itemize}
+
+
+\end{frame}
+
+
+\begin{frame}[<+->]{Ringraziamenti}
+ \begin{itemize}
+  \item Voi
+  \item Giuseppe D'Orsi --- Matteo Palmisano
+  \item Maurizio Napolitano -- \url{http://de.straba.us}
+  \item i nani volenterosi
+ \end{itemize}
+ 
+  \begin{block}{Queste slides}
+  \url{http://goo.gl/MA2Pk} [github: mammadori]
+  \end{block}
+ 
+\end{frame}
+
+
+\end{document}
+
