@@ -35,8 +35,6 @@
 \usepackage{setspace}
 \usepackage{textcomp}
 
-\input{cc_beamer}
-
 \title[Software e Surplus Cognitivo]{Surplus Cognitivo, Free Software, Open Data}
 \subtitle{Salire sulle spalle di tanti nani per guardare lontano}
 \author[Marco Amadori]{Marco Amadori <marco.amadori@gmail.com>}
@@ -44,7 +42,7 @@
            Fondazione Bruno Kessler --- \url{http://www.fbk.eu}}
 \date{\scriptsize Pordenone --- \vspace{.10cm}29 Settembre 2012}
 
-\pgfdeclareimage[height=0.8cm]{logo-small}{figures/TEDx.pdf}
+\pgfdeclareimage[height=0.5cm]{ccbysa}{figures/by-sa.pdf}
 \pgfdeclareimage[height=1.6cm]{logo}{figures/TEDx_Pordenone.pdf}
 
 \pgfdeclareimage[height=1.6cm]{moglen}{figures/eben_moglen.jpg}
@@ -57,11 +55,12 @@
 
 \pgfdeclareimage[height=0.75\textheight]{cake}{figures/data-cake-graphic.jpg}
 \pgfdeclareimage[height=6cm]{openbilanci}{figures/openbilanci.png}
+\pgfdeclareimage[height=6cm]{bitcoinamount}{figures/Total_bitcoins_over_time_graph.png}
 
 \pgfdeclareimage[height=0.4cm]{flitaly}{figures/flag_of_italy.png}
 \pgfdeclareimage[height=0.4cm]{bitcoin}{figures/Bitcoin.png}
 
-\logo{\pgfuseimage{logo-small}}
+\logo{\pgfuseimage{ccbysa}}
 
 \begin{document}
 
@@ -69,12 +68,7 @@
   \titlepage
   \begin{center}%
     \pgfuseimage{logo}%
-    %license 
     \end{center}%
-    %license 
-    \vfill
-   {\tiny\CcNote{\CcLongnameBySa}} \CcGroupBySa{0.83}{0.95ex}
- 
 \end{frame}
 
 %\section[Sommario]{}
@@ -184,14 +178,14 @@ e collaborare a grandi progetti a volte anche globali.»
   \begin{column}{.7\textwidth}
     \begin{exampleblock}{Il Software}
       \begin{scriptsize}
-      
-	«\emph{Il Software} è quello di cui è fatto il 21esimo secolo. \\
-	quello che l'\emph{acciaio} era per l'economia del 20esimo secolo, \\
-	quello che l'\emph{acciaio} era per il potere nel 20esimo secolo, \\
-	quello che l'\emph{acciaio} era per la politica nel 20esimo secolo, \\
-	\emph{il Software} lo è oggi. \\
-	è la pietra angolare, il componente \\ 
-	sul quale tutto il resto è costruito\ldots» \\
+
+    «\emph{Il Software} è quello di cui è fatto il 21esimo secolo. \\
+    quello che l'\emph{acciaio} era per l'economia del 20esimo secolo, \\
+    quello che l'\emph{acciaio} era per il potere nel 20esimo secolo, \\
+    quello che l'\emph{acciaio} era per la politica nel 20esimo secolo, \\
+    \emph{il Software} lo è oggi. \\
+    è la pietra angolare, il componente \\ 
+    sul quale tutto il resto è costruito\ldots» \\
       \end{scriptsize}
       \vfill
       \begin{tiny} Brussel --- FOSDEM 2011 \end{tiny}
@@ -255,17 +249,23 @@ e collaborare a grandi progetti a volte anche globali.»
 
 \begin{frame}[<+->]{\pgfuseimage{bitcoin} \hspace{0.3ex} Bitcoin}{applicazione di Free Software e Open Data}
  \begin{itemize}
-  \item moneta virtuale 
-  \item non associata ad una moneta statale
+  \item moneta virtuale non associata ad una moneta bancaria
   \item distribuita, decentralizzata
-  \item ha un costo di conio
-  \item un valore
-  \item senza inflazione forzata
+  \item ha un costo di conio (elettricità per il calcolo)
+  \item un valore (di mercato)
+  \item non controllabile da uno stato o azienda
   \item software Open Source
   \item i coin sono Open Data
  \end{itemize}
 
 \end{frame}
+
+\begin{frame}{\pgfuseimage{bitcoin} \hspace{0.3ex} Bitcoin}{quanto ne circola?}
+\begin{center}
+     \pgfuseimage{bitcoinamount}
+\end{center}
+\end{frame}
+
 
 \section{Note finali}
 
@@ -311,7 +311,7 @@ e collaborare a grandi progetti a volte anche globali.»
   \begin{block}{Queste slides}
   \url{http://goo.gl/MA2Pk} [github: mammadori]
   \end{block}
- 
+
 \end{frame}
 
 
